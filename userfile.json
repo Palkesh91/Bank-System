@@ -1,0 +1,41 @@
+[
+  {
+    "id": "e150f8ab-7d82-4cfc-a513-83b167051d51",
+    "name": "palkesh",
+    "Balance": 3000,
+    "transections": [
+      {
+        "sender": "1",
+        "reciver": "e150f8ab-7d82-4cfc-a513-83b167051d51",
+        "amount": 3000,
+        "status": "credit"
+      }
+    ]
+  },
+  {
+    "id": "ed98e5d2-bf07-4a54-98e2-5a1fb8d48510",
+    "name": "yash",
+    "Balance": 2000,
+    "transections": [
+      {
+        "sender": "1",
+        "reciver": "ed98e5d2-bf07-4a54-98e2-5a1fb8d48510",
+        "amount": 2000,
+        "status": "credit"
+      }
+    ]
+  },
+  {
+    "id": "caa842b2-6356-4f07-bbcb-4a0bc5f7f37c",
+    "name": "jay",
+    "Balance": 1000,
+    "transections": [
+      {
+        "sender": "1",
+        "reciver": "caa842b2-6356-4f07-bbcb-4a0bc5f7f37c",
+        "amount": 1000,
+        "status": "credit"
+      }
+    ]
+  }
+]
