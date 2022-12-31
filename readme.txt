@@ -17,5 +17,5 @@ To show transections of user use command "/bankTrans USER_ID"
 
 
 Project will not match asper the guidlines.
-Because Some or the thing I don't know how to implement
+Because Some of the thing I don't know how to implement
 Code is in a single file Because i'm facing many error while making a seprate file and run it.
