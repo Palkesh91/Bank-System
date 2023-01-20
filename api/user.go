@@ -4,12 +4,12 @@ import (
 	"log"
 	"net"
 	"strconv"
-	"test1/module"
+	"test1/model"
 
 	"github.com/google/uuid"
 )
 
-var Users = make([]*module.User, 0)
+var Users = make([]*model.User, 0)
 
 func CreateUser(args []string, conn net.Conn) {
 	if len(args) < 3 {
@@ -21,14 +21,14 @@ func CreateUser(args []string, conn net.Conn) {
 	if err != nil {
 		log.Println(err)
 	}
-	tranfer := module.Transection{
+	tranfer := model.Transection{
 		SenderID:   Bank.ID,
 		RecieverID: id,
 		Amount:     amount,
 		Status:     "credit",
 	}
-	Trans := []module.Transection{tranfer}
-	u := &module.User{
+	Trans := []model.Transection{tranfer}
+	u := &model.User{
 		ID:           id,
 		Name:         args[1],
 		Balance:      amount,
@@ -71,7 +71,7 @@ func Transfer(senderid string, receiverid string, amount int, conn net.Conn) {
 			if item.Balance >= amount {
 				item.Balance = item.Balance - amount
 				flag = !flag
-				t := &module.Transection{
+				t := &model.Transection{
 					SenderID:   senderid,
 					RecieverID: receiverid,
 					Amount:     amount,
@@ -91,7 +91,7 @@ func Transfer(senderid string, receiverid string, amount int, conn net.Conn) {
 		for ind, item := range Users {
 			if item.ID == receiverid {
 				item.Balance = item.Balance + amount
-				t := &module.Transection{
+				t := &model.Transection{
 					SenderID:   senderid,
 					RecieverID: receiverid,
 					Amount:     amount,
@@ -124,7 +124,7 @@ func Transections(args []string, conn net.Conn) {
 
 }
 
-func Showtrans(trans []module.Transection, conn net.Conn, cnt int) {
+func Showtrans(trans []model.Transection, conn net.Conn, cnt int) {
 	for _, item := range trans {
 		if cnt == 0 {
 			break

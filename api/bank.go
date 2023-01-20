@@ -4,10 +4,10 @@ import (
 	"log"
 	"net"
 	"strconv"
-	"test1/module"
+	"test1/model"
 )
 
-var Bank = &module.Admin{
+var Bank = &model.Admin{
 	ID:   "1",
 	Name: "Bank",
 }
