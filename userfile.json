@@ -37,5 +37,18 @@
         "status": "credit"
       }
     ]
+  },
+  {
+    "id": "113db43f-ece8-49a7-b3f1-375b47d19155",
+    "name": "anand",
+    "Balance": 3000,
+    "transections": [
+      {
+        "sender": "1",
+        "reciver": "113db43f-ece8-49a7-b3f1-375b47d19155",
+        "amount": 3000,
+        "status": "credit"
+      }
+    ]
   }
 ]
