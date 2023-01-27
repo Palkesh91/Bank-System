@@ -4,7 +4,7 @@ import (
 	"log"
 	"net"
 	"test1/api"
-	"test1/input.go"
+	"test1/input"
 )
 
 func main() {
